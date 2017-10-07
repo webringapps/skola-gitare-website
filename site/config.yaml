@@ -3,6 +3,7 @@ baseurl: "/"
 languageCode: hr-HR
 languageLang: hr
 title: Bytellio software development
+pluralizelisttitles: false
 params:
   copyright: skola-gitare.com
   powerBy: www.webringapps.com
@@ -38,6 +39,6 @@ disableKinds: ["RSS", "taxonomy", "taxonomyTerm"]
 
 menu:
     top:
-    - {Name: Home, Identifier: home, Url: "/", Weight: 10}
+    - {Name: Naslovna, Identifier: home, Url: "/", Weight: 10}
     - {Name: Blog, Identifier: blog, Url: "/blog/", Weight: 20}
 ---

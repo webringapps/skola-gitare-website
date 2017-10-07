@@ -1,0 +1,89 @@
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-6 text-right">
+                <div class="widget widget-text footer-logos">
+                    <img src="/img/common/footer-logo.png " alt="logo-footer">
+                </div>
+            </div>
+            <!-- /.col-md-12 -->
+            <div class="col-md-6 col-sm-6 col-xs-6">
+                {{ partial "sg-social" .Site.Params.social }}
+            </div>
+            <!-- /.col-md-6 -->
+        </div>
+        <!-- /.row -->
+
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="sidebar-inner-footer">
+                    <div class="widget widget-infomation">
+                        <ul class="flat-information">
+                            <li class="email"><i class="fa fa-envelope"></i><a href="mailto:{{ .Site.Params.contact.email }}"> {{ .Site.Params.contact.email }}</a></li>
+                            <li class="phone"><i class="fa fa-mobile"></i><a href="{{ .Site.Params.contact.mobile }}">{{ .Site.Params.contact.mobile }}</a></li>
+                            <li class="address"><i class="fa fa-map-marker"></i>{{ .Site.Params.contact.address }}</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- /.sidebar-inner-footer -->
+            </div>
+            <!-- /.col-md-12 -->
+        </div>
+        <!-- /.row -->
+
+
+        <!-- /.row -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="copyright text-center">
+                    © Copyright <a href=" {{ .Site.BaseURL }}" target="_blank">Gitarski Kutak</a> 2017. Powered by <a href="http://www.webringapps.com" target="_blank">We Bring Apps</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+    <!-- Go Top -->
+    <a class="go-top">
+        <i class="fa fa-angle-up"></i>
+    </a>
+</footer>
+
+<!-- jQuery -->
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script src="/js/jquery.easing.1.3.min.js" type=""></script>
+
+<script type="text/javascript">
+    var switchTo5x = true;
+</script>
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">
+    stLight.options({
+        publisher: "a2b9a8a1-860d-4197-a5f3-44faa50f5338",
+        doNotHash: true,
+        doNotCopy: true,
+        hashAddressBar: false
+    });
+</script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/skolagitare.js"></script>
+<script type="">
+    $(function() { $(".contact-info .et").append("&#64;"); });
+</script>
+<script>
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-55187699-2', 'auto');
+    ga('send', 'pageview');
+</script>

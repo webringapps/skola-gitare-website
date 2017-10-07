@@ -1,0 +1,15 @@
+<div class="separator"> <span class="bluedot"></span> </div>
+<!-- Contact Section -->
+<section id="contact" class="about-me">
+    <div class="container white-wrap content-section text-center">
+        <div class="row">
+            <h3>Autor</h3>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <img src='{{ .Site.Params.author.avatar }}' alt="{{ .Site.Params.author.name }}" class="guitar-player-image" />
+            </div>
+            <div class="col-lg-9 col-md-8 col-sm-6 contact-section-content">
+                {{ .Site.Params.author.content }}
+            </div>
+        </div>
+    </div>
+</section>

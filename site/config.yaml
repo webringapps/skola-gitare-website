@@ -1,0 +1,43 @@
+---
+baseurl: "/"
+languageCode: hr-HR
+languageLang: hr
+title: Bytellio software development
+params:
+  copyright: skola-gitare.com
+  powerBy: www.webringapps.com
+  social:
+    twitter: http://skola-gitare.com/
+    facebook: https://www.facebook.com/gitarski.kutak/
+    instagram: http://www.instagram.com/gitarski.kutak/
+    google: https://plus.google.com/+GitarskiKutak
+  contact:
+    email: gitarski.kutak@skola-gitare.com
+    address: Ulica Republike Austrije 7, 10000 Zagreb, Hrvatska
+    mobile: +385 99 301 7535
+  author:
+    name: Vedran Bazdulj
+    about: "Moje ime je **Vedran Bazdulj** i osnivač sam Gitarskog Kutka. Sviram gitaru više od 20 godina, a podukom se profesionalno bavim od 2005. godine. Uz poduku gitare bavim se tonskim snimanjem, skladanjem glazbe za reklame, video igre, filmove i kao studijski muzičar za druge glazbenike. Kao edukator sam ponosan na sve polaznike koji su naučili uživati u sviranju instrumenta i glazbi općenito, te sam iznimno ponosan na velik broj polaznika koji su uspješno završili školski program te danas aktivno sviraju i bave se glazbom profesionalno te su u mogućnosti stečeno znanje kapitalizirati."
+    contact:
+      email: gitarski.kutak@skola-gitare.com
+    image: 
+      small: /img/common/autor.jpg
+      medium: /img/common/autor.jpg
+      big: /img/common/autor.jpg
+    social:
+      twitter: http://skola-gitare.com/
+      facebook: https://www.facebook.com/gitarski.kutak/
+      instagram: http://www.instagram.com/gitarski.kutak/
+      google: https://plus.google.com/+GitarskiKutak
+
+
+# RSS, categories and tags disabled for an easy start
+# See configuration options for more details: 
+# https://gohugo.io/getting-started/configuration/#toml-configuration
+disableKinds: ["RSS", "taxonomy", "taxonomyTerm"]
+
+menu:
+    top:
+    - {Name: Home, Identifier: home, Url: "/", Weight: 10}
+    - {Name: Blog, Identifier: blog, Url: "/blog/", Weight: 20}
+---

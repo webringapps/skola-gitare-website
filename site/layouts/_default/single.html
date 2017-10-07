@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="hr">
+{{ partial "b-head" . }} 
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+  {{ partial "sg-nav" . }} 
+  <div class="page-title parallax parallax1">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="page-title-heading">
+                    <h1 class="title"> {{ .Params.h1 }}</h1>
+                    {{ partial "sg-breadcrumbs" . }} 
+                </div><!-- /.page-title-captions -->
+            </div><!-- /.col-md-12 -->
+        </div><!-- /.row -->
+    </div>
+  </div><!-- /.page-title -->
+
+  
+  {{ partial "sg-footer" . }} 
+</body>

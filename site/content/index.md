@@ -1,6 +1,6 @@
 ---
 type: home
-page: /home.html
+page: home
 layout: home
 seo:
   keywords: 'škola gitare,poduka gitare,električna gitara,hard rock,metal,Individualno,skupno,band,jazz,blues,rock'
@@ -9,7 +9,7 @@ seo:
     Gitarski Kutak je privatna škola gitare za sve uzraste, naš cij je ponuditi najkvalitetniju moguću poduku kroz ugodnu i poticajnu atmosferu. Nastava je individualna ili skupna te kombinirana. Cilj svake grupe je da se od nje napravi bend tj. band. i da se uvježbane pjesme prezentiraju na koncertu u nekom od zagrebačkih rock klubova. Sviraju se najpopularniji glazbeni pravci kao što su Pop, Rock, Blues, Hard Rock, Metal, Heavy Metal, funk, ali i klasika i jazz. Izbor instrumenta je: Klasična gitara, Akustična gitara, Električna gitara.
 title: Home
 h1: Škola gitare "Gitarski Kutak"
-intro: >
+content: >
   **Gitarski Kutak** osnovan je na temelju 12 godina iskustva poduke gitare po mnogim privatnim zagrebačkim glazbenim školama i tečajevima sa svrhom ponude najkvalitetnije moguće poduke gitare svim polaznicima bez obzira na njihovu dob i preferirani stil glazbe i sviranja.
 
 
@@ -18,15 +18,15 @@ intro: >
 
   U Gitarskom kutku možete učiti sve popularne glazbene pravce po zanimljivom i bogatom programu prilagođenom uzrastu i preferenciji polaznika. Nastava može biti individualna, skupna ili kombinirana po vašem izboru. Za polaznike koji uspješno savladaju program organizira se nastup na kraju svakog semestra. Obratite nam se s povjerenjem!
 slider:
-  - image: /img/1.jpg
-    class: school
+  - image: /img/common/electric.jpg
+    class: intro
     title: Škola gitare Gitarski Kutak
     content: Naučite svirati električnu gitaru u opuštenoj i ugodnoj radnoj atmosferi. Naučite brže i bolje uz individualnu/skupnu nastavu i progam prilagođen svakom polazniku.
-  - image: /img/website_development.jpg
+  - image: /img/common/intro.jpg
     class: electric
     title: Poduke iz električne gitare
-    content: Savladaj "Leagto, Tapping, Sweeping" i sve ostale atraktivne tehnike na električnoj gitari!
-  - image: /img/website_development.jpg
+    content: Savladaj "Legato, Tapping, Sweeping" i sve ostale atraktivne tehnike na električnoj gitari!
+  - image: /img/common/acoustic.jpg
     class: acoustic
     title: Poduke iz električne gitare
     content: Naučite svirati svoje najdraže pjesme na akustičnoj gitari

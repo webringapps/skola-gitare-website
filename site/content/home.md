@@ -3,85 +3,36 @@ type: home
 page: /home.html
 layout: home
 seo:
-  keywords: 'web development, cloud development, AWS services'
-  meta-title: Team of highly qualified software engineers
+  keywords: 'škola gitare,poduka gitare,električna gitara,hard rock,metal,Individualno,skupno,band,jazz,blues,rock'
+  meta-title: Škola gitare Gitarski kutak
   metaDescription: >-
-    Team of highly qualified software engineers at your service. web and mobile
-    app development, CRM, API and CMS integration.
+    Gitarski Kutak je privatna škola gitare za sve uzraste, naš cij je ponuditi najkvalitetniju moguću poduku kroz ugodnu i poticajnu atmosferu. Nastava je individualna ili skupna te kombinirana. Cilj svake grupe je da se od nje napravi bend tj. band. i da se uvježbane pjesme prezentiraju na koncertu u nekom od zagrebačkih rock klubova. Sviraju se najpopularniji glazbeni pravci kao što su Pop, Rock, Blues, Hard Rock, Metal, Heavy Metal, funk, ali i klasika i jazz. Izbor instrumenta je: Klasična gitara, Akustična gitara, Električna gitara.
 title: Home
-h1: Team of **highly qualified** software engineers at your service
+h1: Škola gitare "Gitarski Kutak"
 intro: >
-  The **fastest** way to grow your **business** is to use leading technologies
-  to your advantage. Connect all your systems, data sheets, client and business
-  information into one mean machine and be the master of your business. Don’t
-  let business opportunities or potential risk go under your radar just because
-  you couldn’t get your data sheets and clients synchronized.
+  **Gitarski Kutak** osnovan je na temelju 12 godina iskustva poduke gitare po mnogim privatnim zagrebačkim glazbenim školama i tečajevima sa svrhom ponude najkvalitetnije moguće poduke gitare svim polaznicima bez obzira na njihovu dob i preferirani stil glazbe i sviranja.
 
 
-  Make **higher client conversion** by employing **UX design** techniques and
-  appealing beautiful design to your public websites or social network.
-  **Connect your websites with CRM** and track your client preferences, get to
-  know them better and offer them what they need at the right time. We are sure
-  that will boost your revenues.
+  Naš stav je da sviranje instrumenta i učenje glazbe općenito, nikako ne smije biti izvor stresa i frustracije nego da mora biti izvor zadovoljstva i zabave te na temelju tog razmišljanja provodimo svoj program.
 
 
-  **Use software to speed up your process** and save time for more important
-  things - your business. Don’t spend hours and hours by trying to manually
-  export any analyze information. Your time is crucial to you, spend it more
-  efficient by concentrating on the things you already know
+  U Gitarskom kutku možete učiti sve popularne glazbene pravce po zanimljivom i bogatom programu prilagođenom uzrastu i preferenciji polaznika. Nastava može biti individualna, skupna ili kombinirana po vašem izboru. Za polaznike koji uspješno savladaju program organizira se nastup na kraju svakog semestra. Obratite nam se s povjerenjem!
 slider:
   - image: /img/1.jpg
-    title: Add qualified and experienced people to your development team
+    class: school
+    title: Škola gitare Gitarski Kutak
+    content: Naučite svirati električnu gitaru u opuštenoj i ugodnoj radnoj atmosferi. Naučite brže i bolje uz individualnu/skupnu nastavu i progam prilagođen svakom polazniku.
   - image: /img/website_development.jpg
-    subtitle: >-
-      Experienced team in UI design and UX. Make web applicatinos that users
-      will love
-    title: Web app development
-sections:
-  - animation: fadeInUp
-    class: text-left
-    content: >-
-      We bring a **personal** and **effective** approach to every project we
-      work on, which is why our clients love us and why they keep coming back.
-      We highly value quality and we try to find the best balance between our
-      **quality** assurance and client's expenses. 
+    class: electric
+    title: Poduke iz električne gitare
+    content: Savladaj "Leagto, Tapping, Sweeping" i sve ostale atraktivne tehnike na električnoj gitari!
+  - image: /img/website_development.jpg
+    class: acoustic
+    title: Poduke iz električne gitare
+    content: Naučite svirati svoje najdraže pjesme na akustičnoj gitari
+aboutUs: >
+  Moje ime je **Vedran Bazdulj**  i osnivač sam Gitarskog Kutka. Sviram gitaru više od 20 godina, a podukom se profesionalno bavim od 2005. godine. Uz poduku gitare bavim se tonskim snimanjem, skladanjem glazbe za reklame, video igre, filmove i kao studijski muzičar za druge glazbenike. Kao edukator sam ponosan na sve polaznike koji su naučili uživati u sviranju instrumenta i glazbi općenito, te sam iznimno ponosan na velik broj polaznika koji su uspješno završili školski program te danas aktivno sviraju i bave se glazbom profesionalno te su u mogućnosti stečeno znanje kapitalizirati.
 
-
-      You shouldn’t spend tons of money on SAP or in-house software, because
-      software life-span is short and becoming shorter every day. Rather than
-      buying a pure software consider buying a service. **Services evolve,
-      programs don’t**!
-
-    icon: icon-coffee left fadeInUp
-    title: A fact worth a **thousand** words
-    type: fact
-  - animation: none
-    class: text-left
-    content: >-
-      We investigate our client's needs and try to **solve business problems**
-      with simple and intuitive technology solutions and focusing on things that
-      are most important to clients - NOT computers!
-
-
-      Our client’s goals are our primary target and focus should stay on those.
-      Technical difficulties and similar obstacles are not something that is
-      important to our clients - it’s up to us to solve it, not our clients! 
-
-
-      We involve our client’s into our development process by applying **UX
-      interaction design** method to produce high quality software/service and
-      fulfill their expectations. We also use small steps approach with
-      **iterative software development** to detect potential problems in design
-      and we correct them at the very beginning. Design flaws can be huge
-      problems if they are not detected at the right time.
-    icon: icon-tablet right
-    title: Our development process
-    type: development
 testimonials:
   - {}
 ---
-
-
-
-
-

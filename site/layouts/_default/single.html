@@ -17,6 +17,54 @@
     </div>
   </div><!-- /.page-title -->
 
-  
+  <div class="white-grid joined">
+    <div class="container top-container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="meta-post course-list">
+                    <ul class="pad clearfix chars">
+                        {{ with .Params.date }}
+                        <li class="post-date"><i class="fa fa-calendar"></i><span class="date-icon"> {{ . }}</span></li>
+                        {{ end}}
+                        {{ with .Params.tags }}
+                        <li class="post-date"><i class="fa fa-calendar"></i><span class="date-icon"> {{ . }}</span></li>
+                        {{ end}}
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 text-right">
+              {{ partial "sg-share-buttons" . }} 
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+              {{ if .Params.useResponsiveImage }}
+                {{ with .Params.responsiveImage}}
+                  {{ partial "sg-responsive-image" . }} 
+                {{ end }}
+              {{ end }}
+             </div>
+        </div>
+    </div>
+    <div class="container">
+      <div class="row">
+          <div class="col-md-12">
+              {{ .Params.content }}
+          </div>
+      </div>
+    </div>
+    <div class="container bottom-container">
+      <div class="row">
+          <div class="col-md-6"></div>
+          <div class="col-md-6 text-right">
+            {{ partial "sg-share-buttons" . }} 
+          </div>
+      </div>
+    </div>
+  </div>
+
+  {{ partial "sg-author" . }} 
   {{ partial "sg-footer" . }} 
 </body>

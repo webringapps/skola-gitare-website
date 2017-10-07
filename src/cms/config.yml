@@ -25,10 +25,10 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Title, name: title, widget: string, default: Home}
           - {label: Type, name: type, widget: hidden, default: home}
           - {label: Page, name: page, widget: hidden, default: "/index.html"}
-          - {label: "Layout", name: "layout", widget: "hidden", default: "home"}
+          - {label: Layout, name: layout, widget: hidden, default: home}
           - {label: Heading, name: h1, widget: string}
           - {label: Content, name: content, widget: markdown}
-          - {label: Sub Content, name: subcontent, widget: markdown}
+          - {label: About Us, name: aboutUs, widget: markdown}
           - label: Slider
             name: slider
             widget: list
@@ -37,9 +37,6 @@ collections: # A list of collections the CMS should be able to edit
             - {label: Class, name: class, widget: string}
             - {label: Content, name: subtitle, widget: markdown}
             - {label: Image, name: image, widget: image}
-            - {label: Image Tablet, name: imageTab, widget: image}
-            - {label: Image Mob, name: imageMob, widget: image}
-            - {label: Image Small Mob, name: imageXsMob, widget: image}
           - label: Testimonials
             name: testimonials
             widget: list
@@ -69,6 +66,20 @@ collections: # A list of collections the CMS should be able to edit
       - {label: Image, name: "image", widget: "image", required: false}
       - {label: Intro, name: intro, widget: text}
       - {label: Content, name: content, widget: markdown, required: false}
+      - {label: Tags, name: tags, widget: string, required: false}
+      - {label: Use Responsive Image, name: "useResponsiveImage", widget: "bool", required: false}
+      - label: Responsive Image
+        name: responsiveImage
+        widget: object
+        required: false
+        fields:
+        - {label: Default image, name: default, widget: image }
+        - {label: Alt, name: alt, widget: string }
+        - {label: Huge (>1200px), name: imageHuge, widget: image, required: false}
+        - {label: Big (>990px), name: imageBig, widget: image, required: false}
+        - {label: Tablet (>650px), name: imageTablet, widget: image, required: false}
+        - {label: Mobile (>330px), name: imageMobile, widget: image, required: false}
+        - {label: Mini (>260px), name: imageMini, widget: image, required: false}
       
   - name: "vijesti" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Vijesti" # Used in the UI, ie.: "New Post"

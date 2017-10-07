@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="hr">
-{{ partial "b-head" . }} 
+{{ partial "sg-head" . }} 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
   {{ partial "sg-nav" . }} 
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -73,7 +73,7 @@
           <div class="row">
               <h2>O nama</h2>
               <div class="col-lg-3 col-md-4 col-sm-6">
-                  <img src="/img/common/autor.jpg" alt="Gitarski kutak o nama" class="guitar-player-image" />
+                  <img src="{{ .Site.Params.author.image.medium }}" alt="Gitarski kutak o nama" class="guitar-player-image" />
               </div>
               <div class="col-lg-9 col-md-8 col-sm-6 contact-section-content">
                   {{ .Params.aboutUs }}

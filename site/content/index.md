@@ -4,7 +4,7 @@ page: home
 layout: home
 seo:
   keywords: 'škola gitare,poduka gitare,električna gitara,hard rock,metal,Individualno,skupno,band,jazz,blues,rock'
-  meta-title: Škola gitare Gitarski kutak
+  metaTitle: Škola gitare Gitarski kutak
   metaDescription: >-
     Gitarski Kutak je privatna škola gitare za sve uzraste, naš cij je ponuditi najkvalitetniju moguću poduku kroz ugodnu i poticajnu atmosferu. Nastava je individualna ili skupna te kombinirana. Cilj svake grupe je da se od nje napravi bend tj. band. i da se uvježbane pjesme prezentiraju na koncertu u nekom od zagrebačkih rock klubova. Sviraju se najpopularniji glazbeni pravci kao što su Pop, Rock, Blues, Hard Rock, Metal, Heavy Metal, funk, ali i klasika i jazz. Izbor instrumenta je: Klasična gitara, Akustična gitara, Električna gitara.
 title: Home
@@ -21,15 +21,15 @@ slider:
   - image: /img/common/electric.jpg
     class: intro
     title: Škola gitare Gitarski Kutak
-    content: Naučite svirati električnu gitaru u opuštenoj i ugodnoj radnoj atmosferi. Naučite brže i bolje uz individualnu/skupnu nastavu i progam prilagođen svakom polazniku.
+    subtitle: Naučite svirati električnu gitaru u opuštenoj i ugodnoj radnoj atmosferi. Naučite brže i bolje uz individualnu/skupnu nastavu i progam prilagođen svakom polazniku.
   - image: /img/common/intro.jpg
     class: electric
     title: Poduke iz električne gitare
-    content: Savladaj "Legato, Tapping, Sweeping" i sve ostale atraktivne tehnike na električnoj gitari!
+    subtitle: Savladaj "Legato, Tapping, Sweeping" i sve ostale atraktivne tehnike na električnoj gitari!
   - image: /img/common/acoustic.jpg
     class: acoustic
     title: Poduke iz električne gitare
-    content: Naučite svirati svoje najdraže pjesme na akustičnoj gitari
+    subtitle: Naučite svirati svoje najdraže pjesme na akustičnoj gitari
 aboutUs: >
   Moje ime je **Vedran Bazdulj**  i osnivač sam Gitarskog Kutka. Sviram gitaru više od 20 godina, a podukom se profesionalno bavim od 2005. godine. Uz poduku gitare bavim se tonskim snimanjem, skladanjem glazbe za reklame, video igre, filmove i kao studijski muzičar za druge glazbenike. Kao edukator sam ponosan na sve polaznike koji su naučili uživati u sviranju instrumenta i glazbi općenito, te sam iznimno ponosan na velik broj polaznika koji su uspješno završili školski program te danas aktivno sviraju i bave se glazbom profesionalno te su u mogućnosti stečeno znanje kapitalizirati.
 

@@ -1,15 +1,102 @@
-{{ partial "head" . }}
+<!DOCTYPE html>
+<html lang="hr">
+{{ partial "sg-head" . }}
 
-{{ partial "nav-top" . }}
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    {{ partial "sg-nav" . }}
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            {{ range .Params.slider }}
+            <header class="intro {{ .class }} item">
+                <div class="intro-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2">
+                                <h2 class="slider-heading">{{ .title }}</h2>
+                                <p class="intro-text">{{ .subtitle }}</p>
+                                <a href="#about" class="btn btn-circle page-scroll">
+                                    <i class="fa fa-angle-double-down animated"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            {{ end }}
+        </div>
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
 
-{{ partial "jumbotron" (dict "imageUrl" "/img/home/jumbotron.jpg" "title" "Great coffee with a conscience" "subtitle" "Support sustainable farming while enjoying a cup") }}
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div>
+    <div id="about"></div>
+    <!-- About Section -->
+    <section class="about-us container white-wrap content-section text-center">
+        <div class="text-center">
+            <div class="row">
+                <div class="">
+                    <h1> {{ .Params.h1 }}</h1>
+                </div>
+            </div>
+            <div class="row contact-info">
+                <div class="col-md-4 col-sm-6 col-xs-6">
+                    <i class="fa fa-envelope"></i><br /> <a href="mailto:{{ .Site.Params.contact.email }}">{{ .Site.Params.contact.email }}</a>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-6">
+                    <i class="fa fa-mobile"></i><br /> <a href="callto:{{ .Site.Params.contact.mobile }}">{{ .Site.Params.contact.mobile }}</a>
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <i class="fa fa-map-marker"></i><br /> <a href="mapto:{{ .Site.Params.contact.address }}">{{ .Site.Params.contact.address }}</a>
+                </div>
+            </div>
+            <div class="call-to-action mg-t30">
+                <div class="title mg-b30">
+                    <h3>Podijelite sa ostalima</h3>
+                </div>
+                <div class="text-centre">
+                    {{ partial "sg-share-buttons" . }}
+                </div>
+            </div>
 
-{{ partial "short-text" (dict "heading" "Why Kaldi?" "text" "Kaldi is the coffee store for everyone who believes that great coffee shouldn't just taste good, it should do good too. We source all of our beans directly from small scale sustainable farmers and make sure part of the profits are reinvested in their communities.")}}
+        </div>
+    </section>
 
-{{ partial "2-up" (dict "heading" "What we offer" "description" "Kaldi is the ultimate spot for coffee lovers who want to learn about their java’s origin and support the farmers that grew it. We take coffee production, roasting and brewing seriously and we’re glad to pass that knowledge to anyone." "svg1" "img/illustrations/coffee.svg" "text1" "We sell green and roasted coffee beans that are sourced directly from independent farmers and farm cooperatives. We’re proud to offer a variety of coffee beans grown with great care for the environment and local communities. Check our post or contact us directly for current availability." "svg2" "/img/illustrations/coffee-gear.svg" "text2" "We offer a small, but carefully curated selection of brewing gear and tools for every taste and experience level. No matter if you roast your own beans or just bought your first french press, you’ll find a gadget to fall in love with in our shop." "buttonText" "See all products" "buttonLink" "/products"  ) }}
+    <div class="separator"> <span class="bluedot"></span> </div>
+    <section class="white-grid no-join">
+        <div class="container">
+            <div class="row clearfix">
+                <div class="col-md-12 column">
+                    <p>
+                        {{ .Params.content | markdownify}}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="separator"> <span class="bluedot"></span> </div>
 
-{{ partial "text-and-image" (dict "heading" "Our values" "text" "Coffee is an amazing part of human culture but it has a dark side too – one of colonialism and mindless abuse of natural resources and human lives. We want to turn this around and return the coffee trade to the drink’s exhilarating, empowering and unifying nature." "buttonText" "Read more" "buttonLink" "/values") }}
+    <!-- Contact Section -->
+    <section id="contact" class="about-me">
+        <div class="white-wrap container content-section text-center">
+            <div class="row">
+                <h2>O nama</h2>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <img src="{{ .Site.Params.author.image.medium }}" alt="Gitarski kutak o nama" class="guitar-player-image" />
+                </div>
+                <div class="col-lg-9 col-md-8 col-sm-6 contact-section-content">
+                    <p>{{ .Params.aboutUs | markdownify }}</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-{{ partial "blog" . }}
-
-{{ partial "footer" . }}
+    {{ partial "sg-footer" . }}
+</body>

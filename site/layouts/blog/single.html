@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="hr">
+{{ partial "sg-head" . }}
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    {{ partial "sg-nav" . }}
+    <div class="page-title parallax parallax1">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="page-title-heading">
+                        <h1 class="title"> {{ .Params.h1 }}</h1>
+                        {{ partial "sg-breadcrumbs" . }}
+                    </div>
+                    <!-- /.page-title-captions -->
+                </div>
+                <!-- /.col-md-12 -->
+            </div>
+            <!-- /.row -->
+        </div>
+    </div>
+    <!-- /.page-title -->
+    <div class="white-grid joined">
+        <div class="container top-container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="meta-post course-list">
+                        <ul class="pad clearfix chars">
+                            {{ with .Date.Format "2006-01-02" }}
+                            <li class="post-date"><i class="fa fa-calendar"></i><span class="date-icon"> {{ . }}</span></li>
+                            {{ end}} {{ with .Params.tags }}
+                            <li class="post-date"><i class="fa fa-calendar"></i><span class="date-icon"> {{ . }}</span></li>
+                            {{ end}}
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 text-right">
+                    {{ partial "sg-share-buttons" . }}
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    {{ if .Params.useResponsiveImage }} {{ with .Params.responsiveImage}} {{ partial "sg-responsive-image" . }} {{ end }} {{ end }}
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    {{ .Params.content }}
+                </div>
+            </div>
+        </div>
+        <div class="container bottom-container">
+            <div class="row">
+                <div class="col-md-6"></div>
+                <div class="col-md-6 text-right">
+                    {{ partial "sg-share-buttons" . }}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{ partial "sg-author" . }} {{ partial "sg-footer" . }}
+</body>

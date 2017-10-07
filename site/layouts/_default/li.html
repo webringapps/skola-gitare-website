@@ -1,9 +1,25 @@
-<a href="{{ .Permalink }}" class="no-underline pa3 bg-grey-1 br1 mb2 db raise w-100">
 
-	<h2 class="f3 b lh-title mb1 primary">{{ .Title }}</h2
-    >
-	<p class="mid-gray lh-title mb2">{{ .Date.Format "Mon, Jan 2, 2006" }}</p>
-	<p class="mb0">{{ .Description }}</p>
-	<p class="link b dib black mb0">Read more →</p>
-
-</a>
+<li class="clearfix">
+  {{ with .Params.image }}
+    <div class="thumb">
+        <a href="{{ .Permalink }}"><img src="{{ .Params.image }}" alt=" {{ .Title }}"></a>
+    </div>
+  {{ end }}
+  <div class="list-content">
+    <div class="courses-content">
+        <h6 class="courses-topic"><a href="{{ .Permalink }}"> {{ .Title }}</a></h6>
+    </div>
+      <div class="meta-post">
+          <ul class="pad clearfix chars">
+              <li class="post-date"><i class="fa fa-calendar"></i><span class="date-icon">{{ .Date.Format "2006-01-02" }}</span></li>
+              {{ with .Params.tags}}
+                <li class="post-categories">
+                  <i class="fa fa-tag"></i>
+                  {{ . }}
+              </li>
+              {{ end }}
+          </ul>
+      </div>
+      <div class="content">{{ with .Params.intro }} {{ . | markdownify }} {{ end }}</div>
+  </div>
+</li>

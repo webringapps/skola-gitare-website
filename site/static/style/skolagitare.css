@@ -609,8 +609,12 @@ body {
 
 .breadcrumbs ul li {
     display: inline-block;
-    padding-left: 13px;
+    padding-left: 18px;
     position: relative;
+}
+
+.breadcrumbs ul:first-child {
+    padding-left: 0px;
 }
 
 .breadcrumbs ul li:before {

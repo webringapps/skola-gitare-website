@@ -19,7 +19,7 @@
   <div class="white-grid joined">
     <div class="container top-container">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-12">
                 <div class="meta-post course-list">
                     <ul class="pad clearfix chars">
                         {{ with .Params.date }}
@@ -34,9 +34,20 @@
         </div>
     </div>
     <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+              {{ if .Params.useResponsiveImage }}
+                {{ with .Params.responsiveImage}}
+                  {{ partial "sg-responsive-image" . }} 
+                {{ end }}
+              {{ end }}
+             </div>
+        </div>
+    </div>
+    <div class="container">
       <div class="row">
           <div class="col-md-12">
-              {{ with  .Params.content }} {{ . }} {{ end }}
+              {{ .Params.content }}
           </div>
       </div>
     </div>
@@ -47,5 +58,6 @@
     </div>
   </div>
 
+  {{ partial "sg-author" . }} 
   {{ partial "sg-footer" . }} 
 </body>

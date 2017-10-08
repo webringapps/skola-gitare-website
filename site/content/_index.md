@@ -2,6 +2,7 @@
 type: home
 page: home
 layout: home
+
 meta:
   keywords: 'škola gitare,poduka gitare,električna gitara,hard rock,metal,Individualno,skupno,band,jazz,blues,rock'
   title: Škola gitare Gitarski kutak

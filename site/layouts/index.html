@@ -75,7 +75,7 @@
             <div class="row clearfix">
                 <div class="col-md-12 column">
                     <p>
-                        {{ .Params.content | markdownify}}
+                        {{with .Params.content }} {{ . | markdownify}} {{ end }}
                     </p>
                 </div>
             </div>
@@ -92,7 +92,7 @@
                     <img src="{{ .Site.Params.author.image.medium }}" alt="Gitarski kutak o nama" class="guitar-player-image" />
                 </div>
                 <div class="col-lg-9 col-md-8 col-sm-6 contact-section-content">
-                    <p>{{ .Params.aboutUs | markdownify }}</p>
+                    <p>{{with .Params.aboutUs }} {{ . | markdownify}} {{ end }}</p>
                 </div>
             </div>
         </div>

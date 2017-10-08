@@ -66,7 +66,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: Intro, name: intro, widget: text}
       - {label: Content, name: content, widget: markdown, required: false}
       - {label: Tags, name: tags, widget: string, required: false}
-      - {label: Use Responsive Image, name: "useResponsiveImage", widget: "bool", required: false}
+      - {label: Use Responsive Image, name: "useResponsiveImage", widget: "boolean", required: false}
       - label: Responsive Image
         name: responsiveImage
         widget: object

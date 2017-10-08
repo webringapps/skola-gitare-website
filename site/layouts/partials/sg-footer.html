@@ -1,50 +1,50 @@
 <footer class="footer">
-  <div class="container">
-    <div class="row">
-        <div class="col-md-6 col-sm-6 col-xs-6 text-right">
-            <div class="widget widget-text footer-logos">
-                <img src="/img/common/footer-logo.png " alt="logo-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-6 text-right">
+                <div class="widget widget-text footer-logos">
+                    <img src="/img/common/footer-logo.png " alt="logo-footer">
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-6">
+                {{ partial "sg-social" .Site.Params.social }}
             </div>
         </div>
-        <div class="col-md-6 col-sm-6 col-xs-6">
-            {{ partial "sg-social" .Site.Params.social }}
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="sidebar-inner-footer">
+                    <div class="widget widget-infomation">
+                        <ul class="flat-information">
+                            <li class="email"><i class="fa fa-envelope"></i><a href="mailto:{{ .Site.Params.contact.email }}"> {{ .Site.Params.contact.email }}</a></li>
+                            <li class="phone"><i class="fa fa-mobile"></i><a href="callto:{{ .Site.Params.contact.mobile }}">{{ .Site.Params.contact.mobile }}</a></li>
+                            <li class="address"><i class="fa fa-map-marker"></i>{{ .Site.Params.contact.address }}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-md-12 text-center">
-            <div class="sidebar-inner-footer">
-                <div class="widget widget-infomation">
-                    <ul class="flat-information">
-                        <li class="email"><i class="fa fa-envelope"></i><a href="mailto:{{ .Site.Params.contact.email }}"> {{ .Site.Params.contact.email }}</a></li>
-                        <li class="phone"><i class="fa fa-mobile"></i><a href="{{ .Site.Params.contact.mobile }}">{{ .Site.Params.contact.mobile }}</a></li>
-                        <li class="address"><i class="fa fa-map-marker"></i>{{ .Site.Params.contact.address }}</li>
-                    </ul>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="copyright text-center">
+                    © Copyright <a href=" {{ .Site.BaseURL }}" target="_blank">Gitarski Kutak</a> {{ .Now.Year }}. Powered by <a href="http://www.webringapps.com" target="_blank">We Bring Apps</a>
                 </div>
             </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-md-12">
-            <div class="copyright text-center">
-                © Copyright <a href=" {{ .Site.BaseURL }}" target="_blank">Gitarski Kutak</a> {{ .Now.Year }}. Powered by <a href="http://www.webringapps.com" target="_blank">We Bring Apps</a>
-            </div>
-        </div>
-    </div>
-  </div>
-  <a class="go-top">
-      <i class="fa fa-angle-up"></i>
-  </a>
+    <a class="go-top">
+        <i class="fa fa-angle-up"></i>
+    </a>
 </footer>
 
 <!-- jQuery -->
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script src="/js/jquery-1.11.1.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
 <script src="/js/jquery.easing.1.3.min.js" type=""></script>
 
 <script type="text/javascript">
     var switchTo5x = true;
 </script>
-<script type="text/javascript" src="//w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript" src="/js/buttons.js"></script>
 <script type="text/javascript">
     stLight.options({
         publisher: "a2b9a8a1-860d-4197-a5f3-44faa50f5338",

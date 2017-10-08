@@ -2,10 +2,10 @@
 type: home
 page: home
 layout: home
-seo:
+meta:
   keywords: 'škola gitare,poduka gitare,električna gitara,hard rock,metal,Individualno,skupno,band,jazz,blues,rock'
-  metaTitle: Škola gitare Gitarski kutak
-  metaDescription: >-
+  title: Škola gitare Gitarski kutak
+  description: >-
     Gitarski Kutak je privatna škola gitare za sve uzraste, naš cij je ponuditi najkvalitetniju moguću poduku kroz ugodnu i poticajnu atmosferu. Nastava je individualna ili skupna te kombinirana. Cilj svake grupe je da se od nje napravi bend tj. band. i da se uvježbane pjesme prezentiraju na koncertu u nekom od zagrebačkih rock klubova. Sviraju se najpopularniji glazbeni pravci kao što su Pop, Rock, Blues, Hard Rock, Metal, Heavy Metal, funk, ali i klasika i jazz. Izbor instrumenta je: Klasična gitara, Akustična gitara, Električna gitara.
 title: Home
 h1: Škola gitare "Gitarski Kutak"

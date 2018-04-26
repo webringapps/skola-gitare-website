@@ -13,14 +13,14 @@ params:
     instagram: http://www.instagram.com/gitarski.kutak/
     google: https://plus.google.com/105506896150940922726
   contact:
-    email: gitarski.kutak@skola-gitare.com
+    email: gitarski.kutak@gmail.com
     address: Ulica Republike Austrije 7, 10000 Zagreb, Hrvatska
     mobile: +385 99 301 7535
   author:
     name: Vedran Bazdulj
     about: "Moje ime je **Vedran Bazdulj** i osnivač sam Gitarskog Kutka. Sviram gitaru više od 20 godina, a podukom se profesionalno bavim od 2005. godine. Uz poduku gitare bavim se tonskim snimanjem, skladanjem glazbe za reklame, video igre, filmove i kao studijski muzičar za druge glazbenike. Kao edukator sam ponosan na sve polaznike koji su naučili uživati u sviranju instrumenta i glazbi općenito, te sam iznimno ponosan na velik broj polaznika koji su uspješno završili školski program te danas aktivno sviraju i bave se glazbom profesionalno te su u mogućnosti stečeno znanje kapitalizirati."
     contact:
-      email: gitarski.kutak@skola-gitare.com
+      email: gitarski.kutak@gmail.com
     image: 
       small: /img/common/autor.jpg
       medium: /img/common/autor.jpg
